@@ -4,7 +4,7 @@ import { test, expect } from '@playwright/test';
 test('login with valid credential', async ({ page }) => {
  
 await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-await page.locator("//input[@placeholder='Username']").fill("Admin")
+await page.locator("//input[@placeholder='Username098']").fill("Admin")
 await page.locator("//input[@placeholder='Password']").fill("admin123")
 
 await page.locator("//button[@type='submit']").click()
@@ -45,7 +45,7 @@ test('login with Invalid usrname and pwd credential', async ({ page }) => {
             await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
             await page.locator("//input[@placeholder='Username']").fill("yuuhg")
             await page.locator("//input[@placeholder='Password']").fill("adm45tyy")
-            await page.locator("//button[@type='submit']").click()
+            await page.locator("//button[@type='submit']").click
             
            
             
